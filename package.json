@@ -4,7 +4,7 @@
   "description": "testing deployment to gh-pages branch",
   "main": "build.js",
   "scripts": {
-    "deploy": "rimraf dist && node build.js"
+    "deploy": "rimraf dist && node build.js && gh-pages -d dist"
   },
   "repository": {
     "type": "git",
