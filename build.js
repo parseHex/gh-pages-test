@@ -9,7 +9,7 @@ const BUILD_PATH = 'dist';
 	await cp('index.html', 'dist/index.html');
 
 	ghpages.publish(BUILD_PATH, function (err) { });
-});
+})();
 
 function cp(from, to) {
 	return new Promise(function (resolve, reject) {
