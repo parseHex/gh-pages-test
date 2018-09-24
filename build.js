@@ -5,8 +5,8 @@ const copy = require('copy')
 const BUILD_PATH = 'dist';
 
 (async () => {
-	await cp('src/index.js', 'dist/main.js');
-	await cp('index.html', 'dist/index.html');
+	await cp('src/main.js', BUILD_PATH);
+	await cp('index.html', BUILD_PATH);
 
 	ghpages.publish(BUILD_PATH, function (err) { });
 })();
